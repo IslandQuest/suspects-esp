@@ -1,0 +1,88 @@
+/* Container: Grid Layout */
+.suspects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 24px;
+    justify-items: center;
+    padding-top: 20px;
+  }
+  
+  /* Individual Suspect Card */
+  .suspect-card {
+    background: rgba(255, 255, 255, 0.05); /* Glassy dark card */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    backdrop-filter: blur(4px);
+    padding: 16px;
+    width: 100%;
+    max-width: 260px;
+    text-align: center;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+  }
+  
+  .suspect-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.1);
+  }
+  
+  /* Photo Style */
+  .suspect-photo img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.6);
+  }
+  
+  /* Name Box */
+  .suspect-info {
+    margin-top: 12px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 12px;
+    border-radius: 10px;
+    display: inline-block;
+    backdrop-filter: blur(3px);
+  }
+  
+  .suspect-info h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #fdfdfd;
+    margin: 0;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .intro {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+  }
+  .banner {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .banner img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .case-details {
+    background-color: rgba(0, 0, 0, 0.127);
+    padding: 20px;
+    border-radius: 8px;
+    margin: 0 auto 30px auto;
+    border: 2px solid red;
+    max-width: 600px;
+    text-align: center;
+  }
+  
